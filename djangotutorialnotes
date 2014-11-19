@@ -1,0 +1,7 @@
+
+conda create -p ~/anaconda/envs/test2 anaconda=2.1.0 python=2.7.8 numpy=1.9
+
+source activate test2
+source deactivate
+
+So your normal syncdb is now a two step process, python manage.py makemigrations followed by python manage.py migrate.
